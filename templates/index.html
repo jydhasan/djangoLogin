@@ -1,0 +1,9 @@
+{% extends 'basic.html' %}
+
+
+{% block body %}
+{% for x in posts %}
+<h1>{{ x.title }}</h1>
+{% endfor %}
+{% endblock body %}
+    

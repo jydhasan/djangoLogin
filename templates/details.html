@@ -1,0 +1,10 @@
+{% extends "basic.html" %}
+{% block body %}
+
+<div class="container text-center">
+    <img src='{{member.image.url}}' alt='' height="300" width="400">
+    <h3>{{ member.title }}</h3>
+    <p>{{ member.details }}</p>
+</div>
+
+{% endblock body %}

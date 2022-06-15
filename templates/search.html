@@ -1,0 +1,19 @@
+{% extends "basic.html" %}
+{% block body %}
+  
+  <div class="container ">
+    <h1 class="text-center">All post are given bellow</h1>
+    <div class="col-md-6 offset-md-3 mb-3 p-3 border">
+      {% for x in results %}
+      <h3>{{ x.title }}</h3>
+      <p>{{ x.details }}</p>
+      <a href="/details/{{ x.id }}">Read more....</a>
+      <hr>
+      {% endfor %}
+    </div>
+  </div>
+
+
+
+  
+{% endblock body %}
